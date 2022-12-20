@@ -1,0 +1,63 @@
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    height: 75vh;
+    max-width: 20vw;
+    min-width: 470px;
+    border-radius: 8px;
+}
+
+.postHead {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.avatar {
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    height: 2rem;
+}
+
+.name {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.more {
+    height: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+.postImage {
+    height: 70%;
+    width: 100%;
+}
+
+.actionBar {
+    margin-top: 4px;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.actionIcon {
+    height: 2rem;
+    margin: 0.5rem;
+}
+
