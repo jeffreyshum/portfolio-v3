@@ -3,6 +3,7 @@ import styles from "./Hero.module.css"
 import devImage from "../../images/dev.png"
 import mathImage from "../../images/math.png"
 import educatingImage from "../../images/educating.png"
+import homeImage from "../../images/home.png"
 
 const Hero: FC = () => {
 	return (
@@ -24,6 +25,12 @@ const Hero: FC = () => {
 				</span>
 				.
 				<div id={styles.imageContainer}>
+					<img
+						id={styles.homeImage}
+						src={homeImage}
+						alt=""
+						className={styles.image}
+					/>
 					<img
 						id={styles.devImage}
 						src={devImage}

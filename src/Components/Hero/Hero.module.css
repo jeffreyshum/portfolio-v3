@@ -37,6 +37,8 @@
 #imageContainer {
     position: relative;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .image {
@@ -76,12 +78,23 @@
     #mathImage,
     #educatingImage {
         opacity: 0;
+        z-index: 1;
+    }
+
+    #homeImage {
+        position: static;
     }
 
     #devText:hover~#imageContainer #devImage,
     #mathText:hover~#imageContainer #mathImage,
     #educatingText:hover~#imageContainer #educatingImage {
         opacity: 1;
+    }
+
+    #devText:hover~#imageContainer #homeImage,
+    #mathText:hover~#imageContainer #homeImage,
+    #educatingText:hover~#imageContainer #homeImage {
+        opacity: 0;
     }
 }
 
