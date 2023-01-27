@@ -6,7 +6,6 @@
     padding-left: 5px;
     padding-right: 5px;
     font-size: calc(var(--font-size-hero-name)*0.6);
-    background-color: blue;
 }
 
 #splash {
