@@ -2,6 +2,7 @@ import { FC } from "react"
 import styles from "./Hero.module.css"
 import devImage from "../../images/dev.png"
 import mathImage from "../../images/math.png"
+import educatingImage from "../../images/educating.png"
 
 const Hero: FC = () => {
 	return (
@@ -32,6 +33,12 @@ const Hero: FC = () => {
 					<img
 						id={styles.mathImage}
 						src={mathImage}
+						alt=""
+						className={styles.image}
+					/>
+					<img
+						id={styles.educatingImage}
+						src={educatingImage}
 						alt=""
 						className={styles.image}
 					/>

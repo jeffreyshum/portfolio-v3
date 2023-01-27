@@ -56,6 +56,9 @@ const Footer: FC = () => {
 			<a href="https://deviceframes.com/">
 				Device Mockups by DeviceFrames
 			</a>
+			<a href="https://www.freepik.com/free-vector/isometric-graduation-set-with-dancing-students-tossing-up-academic-hats-images-workplaces-school-building-vector-illustration_26760604.htm#query=isometric%20teacher&position=2&from_view=search&track=sph">
+				Educating by macrovector
+			</a>
 		</footer>
 	)
 }

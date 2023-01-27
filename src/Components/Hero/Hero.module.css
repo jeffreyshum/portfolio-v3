@@ -70,15 +70,15 @@
         transform-origin: bottom left;
     }
 
-    #devImage {
+    #devImage, 
+    #mathImage,
+    #educatingImage {
         opacity: 0;
     }
 
-    #devText:hover {
-        opacity: 1;
-    }
-
-    #devText:hover~#imageContainer #devImage {
+    #devText:hover~#imageContainer #devImage,
+    #mathText:hover~#imageContainer #mathImage,
+    #educatingText:hover~#imageContainer #educatingImage {
         opacity: 1;
     }
 }
