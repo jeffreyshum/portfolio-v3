@@ -1,0 +1,63 @@
+.education {
+    min-height: 100vh;
+    max-width: var(--max-center-width);
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color-item);
+}
+
+.title {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.school {
+    color: var(--font-color-highlight);
+}
+
+.degree {
+    margin-top: 0;
+}
+
+.time {
+    text-align: right;
+}
+
+.description {
+    margin: 0;
+}
+
+.grade {
+    margin-top: 0.5rem;
+}
+
+.designationContainer {
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+}
+
+.designation {
+    display: flex;
+}
+
+.designationTitle {
+    margin: 0;
+}
+
+.designationAwarder {
+    margin: 0;
+    color: var(--font-color-secondary);
+}

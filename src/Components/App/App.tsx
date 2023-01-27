@@ -1,12 +1,16 @@
 import { FC } from "react"
+import Education from "../Education/Education"
+import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
 import Hero from "../Hero/Hero"
-import Transition from "../Transition/Transition"
 
 const App: FC = () => {
 	return (
 		<>
+			<Header />
 			<Hero />
-			<Transition />
+			<Education />
+			<Footer />
 		</>
 	)
 }

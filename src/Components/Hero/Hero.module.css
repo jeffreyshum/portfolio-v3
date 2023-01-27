@@ -1,81 +1,30 @@
-.main {
-    min-height: 150vh;
+#hero {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.phone {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    border: 16px var(--phone-color) solid;
-    border-top-width: 60px;
-    border-bottom-width: 60px;
-    border-radius: 36px;
+#splash {
+    margin-top: 35vh;
+    max-width: var(--max-center-width);
+}
+#preamble {
+    margin: 0;
+    padding: 0;
+    font-size: calc(var(--font-size-hero-name)*0.5);
 }
 
-.phone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: var(--phone-speaker-color);
-    border-radius: 10px;
+#name {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-hero-name);
+    letter-spacing: var(--font-letter-spacing-hero-name);
+    font-weight: var(--font-weight-hero-name);
 }
 
-.phone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background: var(--phone-speaker-color);
-    border-radius: 50%;
-}
-
-.phoneScreen {
-    width: 360px;
-    height: 640px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.callName {
-    margin-top: 3rem;
-    font-family: Helvetica;
-    font-weight: 1;
-    font-size: 2rem;
-}
-
-.slider {
-    margin-top: 100%;
-    display: flex;
-    align-items: center;
-    background-color: var(--phone-color);
-    width: 70%;
-    height: 10%;
-    border-radius: 50px;
-    padding: 5px;
-    z-index: 3;
-}
-
-.acceptCall {
-    height: 100%;
-}
-
-.acceptText {
-    font-family: Helvetica;
-    font-size: 1.5rem;
-    color: black;
+.highlight {
+    color: var(--font-color-highlight);
 }

@@ -1,0 +1,21 @@
+#footer {
+    font-size: 0.8rem;
+    color: var(--font-color-secondary);
+    background: var(--bg-footer);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#socialContainer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.socialIcon {
+    height: 2rem;
+}
