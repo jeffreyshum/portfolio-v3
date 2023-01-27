@@ -53,6 +53,9 @@ const Footer: FC = () => {
 			>
 				Icons by Icons8
 			</a>
+			<a href="https://deviceframes.com/">
+				Device Mockups by DeviceFrames
+			</a>
 		</footer>
 	)
 }

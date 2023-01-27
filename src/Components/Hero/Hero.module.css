@@ -1,16 +1,18 @@
 #hero {
-    min-height: 100vh;
-    width: 100%;
+    min-height: 120vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: calc(var(--font-size-hero-name)*0.6);
 }
 
 #splash {
-    margin-top: 35vh;
+    margin-top: 30vh;
     max-width: var(--max-center-width);
 }
+
 #preamble {
     margin: 0;
     padding: 0;
@@ -27,4 +29,58 @@
 
 .highlight {
     color: var(--font-color-highlight);
+    display: inline-block;
+    position: relative;
 }
+
+#imageContainer {
+    position: relative;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+/* Hover Effects */
+@media (prefers-reduced-motion: no-preference) {
+    /* Underline Animation by 30 Seconds of Code 
+       https: //www.30secondsofcode.org/css/s/hover-underline-animation 
+    */
+    .highlight:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        /* https: //uigradients.com/#Alihossein */
+        background: #f7ff00;
+        background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
+        background: linear-gradient(to right, #db36a4, #f7ff00);
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+    }
+
+    .highlight:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    #devImage {
+        opacity: 0;
+    }
+
+    #devText:hover {
+        opacity: 1;
+    }
+
+    #devText:hover~#imageContainer #devImage {
+        opacity: 1;
+    }
+}
+
+
