@@ -1,6 +1,6 @@
 #header {
     position: sticky;
-    top: 0;
+    top: -0.5px;
     background-color: var(--bg-primary);
     padding-top: 5px;
     display: flex;
