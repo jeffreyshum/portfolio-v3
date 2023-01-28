@@ -54,15 +54,6 @@ const Header: FC = () => {
 				<img src={Logo} alt="Logo" className={styles.logo} />
 			</a>
 			<nav id={styles.nav} className={styles.right}>
-				<a href="#experience" className={styles.link}>
-					Experience
-				</a>
-				<a href="#education" className={styles.link}>
-					Education
-				</a>
-				<a href="#showcase" className={styles.link}>
-					Showcase
-				</a>
 				<a
 					href="/resume.pdf"
 					className={classNames(styles.link, styles.resume)}
@@ -70,6 +61,15 @@ const Header: FC = () => {
 					rel="noreferrer"
 				>
 					Resume
+				</a>
+				<a href="#showcase" className={styles.link}>
+					Showcase
+				</a>
+				<a href="#education" className={styles.link}>
+					Education
+				</a>
+				<a href="#experience" className={styles.link}>
+					Experience
 				</a>
 			</nav>
 			<div id={styles.mobileNav} className={styles.right}>
