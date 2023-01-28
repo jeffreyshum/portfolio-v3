@@ -1,0 +1,49 @@
+.experience {
+    max-width: var(--max-center-width);
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#container {
+    padding-left: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color-item);
+}
+
+.title {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.position {
+    font-size: 1.5rem;
+}
+
+.company {
+    color: var(--font-color-highlight);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.company:hover {
+    color: var(--font-color-hover);
+}

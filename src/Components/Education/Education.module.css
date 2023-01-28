@@ -1,7 +1,12 @@
 .education {
-    min-height: 100vh;
     max-width: var(--max-center-width);
     margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
 }
 
 .item {
@@ -26,6 +31,11 @@
 
 .school {
     color: var(--font-color-highlight);
+    transition: var(--transition);
+}
+
+.school:hover {
+    color: var(--font-color-hover);
 }
 
 .degree {
@@ -34,6 +44,7 @@
 
 .time {
     text-align: right;
+    margin-top: 0;
 }
 
 .description {
@@ -46,11 +57,17 @@
 
 .designationContainer {
     margin-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+}
+
+.designation:before {
+    content: '•';
+    margin-right: 0.25rem;
 }
 
 .designation {
     display: flex;
+    list-style-type: circle;
 }
 
 .designationTitle {

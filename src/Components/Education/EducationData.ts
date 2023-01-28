@@ -5,6 +5,7 @@ const data = [
 		type: "Undergraduate",
 		time: "2021 - Present",
 		description: "Expected Graduation: May 2025",
+		link: "https://www.stonybrook.edu/",
 		grade: "GPA: 3.98",
 		designations: [
 			{
@@ -20,6 +21,7 @@ const data = [
 		type: "Secondary Education",
 		time: "2017 - 2021",
 		description: "",
+		link: "https://www.bxscience.edu/",
 		grade: "GPA: 94.49",
 		designations: [
 			{

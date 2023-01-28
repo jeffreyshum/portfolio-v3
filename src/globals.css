@@ -13,6 +13,8 @@
     --font-weight-hero-name: 100;
     --font-color-highlight: gold;
     --font-color-secondary: lightgrey;
+    --font-color-hover: #B668A1;
+    --transition: 0.35s;
     --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     --max-center-width: 700px;
     --border-color-item: lightgrey;
