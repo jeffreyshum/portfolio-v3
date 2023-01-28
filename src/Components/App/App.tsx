@@ -8,8 +8,8 @@ import Hero from "../Hero/Hero"
 const App: FC = () => {
 	return (
 		<>
-			<Hero />
 			<Header />
+			<Hero />
 			<Experience />
 			<Education />
 			<Footer />

@@ -3,8 +3,86 @@
     top: 0;
     background-color: var(--bg-primary);
     padding-top: 5px;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 9;
+    transition: opacity var(--transition);
+    opacity: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .logo {
     height: 2.5rem;
+}
+
+#nav {
+    padding-top: 0.25rem;
+    margin-left: auto;
+}
+
+.link {
+    margin: 0.5rem;
+}
+
+#mobileNav {
+    margin-left: auto;
+    display: none;
+}
+
+.button {
+    background: inherit;
+    border: none;
+}
+
+.hamburger {
+    height: 2rem;
+}
+
+.resume {
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: var(--transition);
+}
+
+.resume:hover {
+    border-color: var(--button-select);
+    background-color: var(--button-select);
+    color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+    #nav {
+        display: none;
+    }
+
+    #mobileNav {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #mobileLinks {
+        display: flex;
+        justify-content: center;
+        transition: var(--transition);
+    }
+
+    .inactive {
+        transform: translateX(100vw);
+    }
+
+    .active {
+        transform: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: flex;
+    }
 }
