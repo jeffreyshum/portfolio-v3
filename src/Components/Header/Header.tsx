@@ -1,4 +1,4 @@
-import { FC, useLayoutEffect, useRef, useState } from "react"
+import { FC, useEffect, useLayoutEffect, useRef, useState } from "react"
 import styles from "./Header.module.css"
 import Logo from "../../images/logo.png"
 import classNames from "classnames"
@@ -27,19 +27,33 @@ const Header: FC = () => {
 		})
 	}, [])
 
+	useEffect(() => {
+		const handleClickOut = (e: MouseEvent) => {
+			if (
+				headerRef.current &&
+				!headerRef.current.contains(e.target as Node)
+			) {
+				close()
+			}
+		}
+
+		const close = () => setActive(false)
+
+		document.addEventListener("mousedown", handleClickOut)
+		document.addEventListener("scroll", close)
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOut)
+			document.removeEventListener("scroll", close)
+		}
+	}, [])
+
 	return (
 		<header id={styles.header} ref={headerRef}>
-			<a href="#top">
-				<img
-					src={Logo}
-					alt="Logo"
-					className={classNames(
-						styles.logo,
-						active ? styles.hidden : styles.visible
-					)}
-				/>
+			<a href="#top" className={styles.left}>
+				<img src={Logo} alt="Logo" className={styles.logo} />
 			</a>
-			<nav id={styles.nav}>
+			<nav id={styles.nav} className={styles.right}>
 				<a href="#experience" className={styles.link}>
 					Experience
 				</a>
@@ -58,7 +72,7 @@ const Header: FC = () => {
 					Resume
 				</a>
 			</nav>
-			<nav id={styles.mobileNav}>
+			<div id={styles.mobileNav} className={styles.right}>
 				<button
 					className={styles.button}
 					onClick={() => setActive(!active)}
@@ -93,7 +107,7 @@ const Header: FC = () => {
 						Resume
 					</a>
 				</div>
-			</nav>
+			</div>
 		</header>
 	)
 }
