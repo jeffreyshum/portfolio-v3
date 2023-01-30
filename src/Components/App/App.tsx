@@ -1,4 +1,5 @@
 import { FC } from "react"
+import Contact from "../Contact/Contact"
 import Education from "../Education/Education"
 import Experience from "../Experience/Experience"
 import Footer from "../Footer/Footer"
@@ -15,6 +16,7 @@ const App: FC = () => {
 				<Experience />
 				<Education />
 				<Showcase />
+				<Contact />
 				<Footer />
 			</div>
 		</>
