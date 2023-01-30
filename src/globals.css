@@ -5,6 +5,8 @@
 
 :root {
     --bg-primary: #222222;
+    --bg-card: #282c34;
+    --bg-card-header: #92A8D1;
     --font-color-primary: white;
     --font: "Lora", "Times New Roman", serif;
     --font-size-logo: 1.5rem;
@@ -14,6 +16,7 @@
     --font-color-highlight: gold;
     --font-color-secondary: lightgrey;
     --font-color-hover: #B668A1;
+    --font-color-card-header: #222222;
     --transition: 0.35s;
     --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     --max-center-width: 700px;

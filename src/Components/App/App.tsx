@@ -4,6 +4,7 @@ import Experience from "../Experience/Experience"
 import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
 import Hero from "../Hero/Hero"
+import Showcase from "../Showcase/Showcase"
 import styles from "./App.module.css"
 const App: FC = () => {
 	return (
@@ -13,6 +14,7 @@ const App: FC = () => {
 				<Hero />
 				<Experience />
 				<Education />
+				<Showcase />
 				<Footer />
 			</div>
 		</>
