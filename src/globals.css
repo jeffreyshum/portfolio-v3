@@ -30,6 +30,7 @@
         --font-size-logo: 1rem;
         --font-size-hero-name: 3.5rem;
         --font-letter-spacing-hero-name: 2px;
+        font-size: 10px;
     }
 }
 
